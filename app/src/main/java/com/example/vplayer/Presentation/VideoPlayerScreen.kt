@@ -59,7 +59,7 @@ fun VideoPlayerScreen(videoId: Long, videoUri: Uri, modifier: Modifier = Modifie
         }
     }
 
-
+    // Resume fromm last saved position
     LaunchedEffect(videoId) {
         val savedPos = dataStore.getPosition(videoId)
         if (savedPos > 0) exoPlayer.seekTo(savedPos)
