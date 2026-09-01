@@ -66,7 +66,7 @@ fun VideoPlayerScreen(videoId: Long, videoUri: Uri, modifier: Modifier = Modifie
         dataStore.addToHistory(videoId)
     }
 
-    // Poll position for seek bar and save progress
+
     LaunchedEffect(exoPlayer) {
         while (true) {
             currentPosition = exoPlayer.currentPosition
