@@ -76,7 +76,7 @@ fun VideoPlayerScreen(videoId: Long, videoUri: Uri, modifier: Modifier = Modifie
         }
     }
 
-    // Auto-hide controls after 3 seconds while playing
+
     LaunchedEffect(controlsVisible, isPlaying) {
         if (controlsVisible && isPlaying) {
             delay(3000)
